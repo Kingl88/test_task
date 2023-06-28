@@ -11,3 +11,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL10Dialect
+test:
+  api:
+    version: 1
+    url: api/v${test.api.version}}
