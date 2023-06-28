@@ -33,7 +33,7 @@ public class Work {
 
     @Column(name = "time_spent_on_work")
     private Integer timeSpentOnWork;
-
+    @ToString.Exclude
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
     private Order order;
