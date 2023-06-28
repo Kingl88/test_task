@@ -41,8 +41,8 @@ public class AutoPart {
 
     @Column(name = "created_at")
     @CreationTimestamp
-    @JsonSerialize(using = InstantSerializer.class)
-    @JsonDeserialize(using = DefaultInstantDeserializer.class)
+//    @JsonSerialize(using = InstantSerializer.class)
+//    @JsonDeserialize(using = DefaultInstantDeserializer.class)
     private Instant createdAt;
 
     @UpdateTimestamp

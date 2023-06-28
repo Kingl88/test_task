@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 public class DefaultInstantDeserializer extends InstantDeserializer<Instant> {
     public DefaultInstantDeserializer() {
-        super( Instant.class, DateTimeFormatter.ISO_INSTANT,
+        super(Instant.class, DateTimeFormatter.ISO_INSTANT,
                 Instant::from,
                 a -> Instant.ofEpochMilli(a.value),
                 a -> Instant.ofEpochSecond(a.integer, a.fraction),

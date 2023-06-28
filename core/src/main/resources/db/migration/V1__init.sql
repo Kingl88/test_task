@@ -41,7 +41,7 @@ CREATE TABLE auto_parts
     name_of_part varchar(50) NOT NULL,
     cost         int         NOT NULL,
     distributor  varchar(50) NOT NULL,
-    order_id     bigint      NOT NULL,
+    order_id     bigint,
     created_at   timestamp DEFAULT (current_timestamp),
     updated_at   timestamp DEFAULT (current_timestamp),
     CONSTRAINT auto_parts_pkey PRIMARY KEY (id),
