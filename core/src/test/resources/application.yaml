@@ -15,9 +15,6 @@ spring:
     compose:
       skip:
         in-tests: false
-      file: ./core/compose.yaml
-
-
 test:
   api:
     version: 1
